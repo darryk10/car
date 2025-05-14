@@ -23,13 +23,6 @@ auditd is the userspace component to the Linux Auditing System. It's responsible
 | `message` |  | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | `start` |  | | | |✓|✓| | | | |✓| | | | |✓| | | | |✓|✓|✓| | | |✓|
 
-### [driver](../data_model/driver)
-
-| | `base_address` | `fqdn` | `hostname` | `image_path` | `md5_hash` | `module_name` | `pid` | `sha1_hash` | `sha256_hash` | `signature_valid` | `signer` |
-|---|---|---|---|---|---|---|---|---|---|---|
-| `load` |  | | |✓|✓|✓| |✓|✓| | |
-| `unload` |  | | | | | | | | | | |
-
 ### [process](../data_model/process)
 
 | | `access_level` | `call_trace` | `command_line` | `current_working_directory` | `env_vars` | `exe` | `fqdn` | `guid` | `hostname` | `image_path` | `integrity_level` | `md5_hash` | `parent_command_line` | `parent_exe` | `parent_guid` | `parent_image_path` | `pid` | `ppid` | `sha1_hash` | `sha256_hash` | `sid` | `signature_valid` | `signer` | `target_address` | `target_guid` | `target_name` | `target_pid` | `uid` | `user` |
@@ -49,6 +42,13 @@ auditd is the userspace component to the Linux Auditing System. It's responsible
 | `read` |  | | | | | | | | | | | | | | | | | | | | | | | | | |
 | `timestomp` |  | |✓| |✓|✓| | | | |✓| |✓| | | | |✓|✓| |✓|✓| | | |✓|
 | `write` |  | |✓| |✓|✓| | | | |✓| |✓| | | | |✓|✓| |✓|✓| | | |✓|
+
+### [driver](../data_model/driver)
+
+| | `base_address` | `fqdn` | `hostname` | `image_path` | `md5_hash` | `module_name` | `pid` | `sha1_hash` | `sha256_hash` | `signature_valid` | `signer` |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `load` |  | | |✓|✓|✓| |✓|✓| | |
+| `unload` |  | | | | | | | | | | |
 
 
 
